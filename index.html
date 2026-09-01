@@ -770,26 +770,23 @@
                 <span class="card-number">Actividad 01</span>
 
                 <h3>
-                    Introducción a los fundamentos de automatización
+                    Fundamentos de Automatización
                 </h3>
             </div>
 
             <div class="card-content">
 
                 <p>
-                    Introducción a los fundamentos de la automatización
-                    de procesos industriales y de servicios, abordando
-                    conceptos esenciales relacionados con Arduino,
-                    sensores, actuadores e Internet de las Cosas (IoT).
+                    Reporte integral que abarca la historia, introducción, conceptos clave, el ciclo de automatización, ventajas, desventajas y la comparativa entre procesos industriales y de servicios.
                 </p>
 
                 <div class="concepts">
-                    <span class="concept">Automatización</span>
-                    <span class="concept">Arduino</span>
-                    <span class="concept">IoT</span>
-                    <span class="concept">Sensores</span>
-                    <span class="concept">Actuadores</span>
-                    <span class="concept">Control</span>
+                    <span class="concept">Historia</span>
+                    <span class="concept">Introducción</span>
+                    <span class="concept">Conceptos Clave</span>
+                    <span class="concept">Ciclo de Automatización</span>
+                    <span class="concept">Ventajas/Desventajas</span>
+                    <span class="concept">Industrial vs Servicios</span>
                 </div>
 
                 <button class="card-button" onclick="openModal('modal-act1')">
@@ -874,86 +871,104 @@
         <button class="close-btn" onclick="closeModal('modal-act1')">&times;</button>
         <div class="modal-body">
             <span class="tag">Actividad 01 · Reporte Completo</span>
-            <h2>Introducción a los Fundamentos de Automatización</h2>
+            <h2>Fundamentos de Automatización</h2>
             
+            <h3>1. Historia de la Automatización</h3>
             <p>
-                La automatización de procesos es la aplicación de tecnologías de información y control para operar maquinaria e instalaciones sin intervención humana directa. En esta unidad introductoria exploramos la integración de la placa <strong>Arduino</strong> como cerebro microcontrolador en sistemas empotrados de monitoreo y control industrial.
+                La automatización tiene raíces ancestrales con mecanismos hidráulicos y de relojería (como los autómatas de la antigua Grecia y los telares de Jacquard en el siglo XIX). Sin embargo, despegó con la Revolución Industrial mediante máquinas de vapor. En el siglo XX, la electrónica, los controladores lógicos programables (PLC) y la era digital transformaron por completo las líneas de ensamblaje hasta llegar a la actual Industria 4.0 con Inteligencia Artificial e Internet de las Cosas (IoT).
             </p>
 
-            <h3>Diagrama de Flujo del Sistema</h3>
-            <div class="diagram-container">
-                <div class="diagram-step">
-                    <span>1. Sensores</span>
-                    <small>Captan variables físicas (temp, luz, dist)</small>
-                </div>
-                <div class="diagram-arrow">→</div>
-                <div class="diagram-step">
-                    <span>2. Arduino</span>
-                    <small>Procesa señales y ejecuta algoritmos</small>
-                </div>
-                <div class="diagram-arrow">→</div>
-                <div class="diagram-step">
-                    <span>3. Actuadores</span>
-                    <small>Realizan acciones físicas (motores, relés)</small>
-                </div>
-                <div class="diagram-arrow">→</div>
-                <div class="diagram-step">
-                    <span>4. Red IoT</span>
-                    <small>Transmite telemetría a la nube</small>
-                </div>
-            </div>
+            <h3>2. Introducción a la Automatización</h3>
+            <p>
+                La automatización de procesos es la aplicación de tecnologías de control y sistemas de información para operar maquinaria, líneas de producción o flujos de servicio de manera autónoma, reduciendo al mínimo la intervención humana directa para mejorar la seguridad, eficiencia y uniformidad.
+            </p>
 
-            <h3>Conceptos Clave del Sistema</h3>
+            <h3>3. Conceptos Claves</h3>
             <div class="modal-grid">
                 <div class="info-box">
                     <h4>Sensores (Entradas)</h4>
-                    <p>Captan magnitudes físicas (temperatura, luz, humedad) y las convierten en señales eléctricas procesables por el microcontrolador.</p>
+                    <p>Capturan magnitudes físicas del entorno (temperatura, luz, proximidad) y las transforman en señales eléctricas.</p>
                 </div>
                 <div class="info-box">
                     <h4>Actuadores (Salidas)</h4>
-                    <p>Dispositivos capaces de transformar señales eléctricas en acciones físicas (motores, relés, válvulas, pistones neumático).</p>
+                    <p>Dispositivos que convierten señales de control en acciones físicas sobre el proceso (motores, relés, válvulas).</p>
                 </div>
                 <div class="info-box">
-                    <h4>Arquitectura IoT</h4>
-                    <p>Conexión del microcontrolador a la red para enviar telemetría en tiempo real y permitir el control a distancia mediante protocolos como MQTT o HTTP.</p>
+                    <h4>Controlador (Cerebro)</h4>
+                    <p>Microcontroladores o PLC que procesan las entradas según algoritmos programados para decidir las salidas.</p>
                 </div>
                 <div class="info-box">
-                    <h4>Sistemas de Lazo Cerrado</h4>
-                    <p>Implementación de algoritmos de retroalimentación donde el sistema evalúa continuamente su salida para corregir desviaciones automáticamente.</p>
+                    <h4>Retroalimentación</h4>
+                    <p>Mecanismo donde el sistema mide su propio resultado para autocorregirse y mantenerse dentro de los parámetros deseados.</p>
                 </div>
             </div>
 
-            <h3>Análisis Comparativo: Ventajas y Desventajas</h3>
+            <h3>4. El Ciclo de la Automatización (Diagrama de Flujo)</h3>
+            <div class="diagram-container">
+                <div class="diagram-step">
+                    <span>1. Entrada</span>
+                    <small>Sensores detectan variables físicas</small>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-step">
+                    <span>2. Procesamiento</span>
+                    <small>Arduino / PLC procesa la señal</small>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-step">
+                    <span>3. Acción</span>
+                    <small>Actuadores ejecutan la orden</small>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-step">
+                    <span>4. Monitoreo / IoT</span>
+                    <small>Envío de datos y telemetría</small>
+                </div>
+            </div>
+
+            <h3>5. Ventajas y Desventajas</h3>
             <div class="pros-cons-grid">
                 <div class="pro-box">
-                    <h4>Ventajas de la Automatización</h4>
+                    <h4>Ventajas</h4>
                     <ul>
-                        <li>Reducción significativa de errores operativos humanos.</li>
-                        <li>Mayor velocidad y precisión en procesos repetitivos.</li>
-                        <li>Monitoreo continuo 24/7 mediante plataformas IoT.</li>
-                        <li>Optimización en el consumo de recursos y energía.</li>
+                        <li>Disminución drástica de errores humanos.</li>
+                        <li>Operación continua 24 horas los 365 días del año.</li>
+                        <li>Mayor seguridad para los trabajadores en áreas peligrosas.</li>
+                        <li>Uniformidad y alta precisión en el producto o servicio.</li>
                     </ul>
                 </div>
                 <div class="con-box">
-                    <h4>Desventajas y Desafíos</h4>
+                    <h4>Desventajas</h4>
                     <ul>
-                        <li>Costo de inversión inicial en hardware y prototipado.</li>
-                        <li>Requerimiento de mantenimiento técnico especializado.</li>
-                        <li>Vulnerabilidades de ciberseguridad al conectar a la red IoT.</li>
-                        <li>Dependencia constante de suministro eléctrico y conectividad.</li>
+                        <li>Inversión inicial elevada en equipos y diseño.</li>
+                        <li>Requerimiento de personal técnico altamente capacitado.</li>
+                        <li>Riesgos asociados a fallas de red o ciberseguridad.</li>
+                        <li>Menor flexibilidad ante cambios drásticos e imprevistos.</li>
                     </ul>
                 </div>
             </div>
 
-            <h3>Recursos y Diagramas Visuales</h3>
+            <h3>6. Diferencias: Procesos Industriales vs. Procesos de Servicios</h3>
+            <div class="modal-grid">
+                <div class="info-box">
+                    <h4>Automatización Industrial</h4>
+                    <p><strong>Enfoque:</strong> Fabricación masiva, manipulación de materias primas, ensamblaje de piezas físicas.<br><strong>Tecnologías:</strong> PLC, brazos robóticos, bandas transportadoras, neumática y sensores pesados.</p>
+                </div>
+                <div class="info-box">
+                    <h4>Automatización de Servicios</h4>
+                    <p><strong>Enfoque:</strong> Optimización de flujos de trabajo informacionales, atención al cliente digital, banca y logística.<br><strong>Tecnologías:</strong> Chatbots, RPA (Robotic Process Automation), pasarelas de pago y software en la nube.</p>
+                </div>
+            </div>
+
+            <h3>Galería de Referencia</h3>
             <div class="image-gallery">
                 <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Microcontrolador y circuitos">
-                    <p>Placa de microcontrolador analizada para el procesamiento de entradas y salidas.</p>
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Microcontroladores y circuitos">
+                    <p>Sistemas electrónicos embebidos para control lógico.</p>
                 </div>
                 <div class="image-card">
                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Automatización Industrial">
-                    <p>Integración de sensores y actuadores en un entorno de pruebas industrial.</p>
+                    <p>Robótica e integración de líneas de producción automatizadas.</p>
                 </div>
             </div>
         </div>
